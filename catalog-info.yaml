@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing
+  description: A workflow for onboarding applications to OCP cluster
+  annotations:
+    backstage.io/kubernetes-namespace: sonataflow-infra
+    backstage.io/kubernetes-id: testing-ci
+    janus-idp.io/tekton: testing
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: test-workflows/onboarding-test
+spec:
+  type: workflow-project
+  system: system:default/janus-orchestrator
+  lifecycle: development
+  owner: user:guest

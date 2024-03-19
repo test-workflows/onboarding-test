@@ -1,0 +1,12 @@
+{
+  "$id": "classpath:/schemas/testing-schema.json",
+  "title": "testing: Data Input Schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "testing__sub_schema__sample_data.json": {
+      "$ref": "testing__sub_schema__sample_section.json",
+      "type": "object"
+    }
+  }
+}
